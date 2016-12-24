@@ -9,6 +9,144 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/homeimage"
     tools:context="com.seals.shubham.myapplication.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:background="#35151515"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="LOG IN"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:id="@+id/LogMess"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Forgot Password?"
+                android:textStyle="italic"
+                android:textSize="17dp"
+                android:id="@+id/frgtPass"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="25dp"
+                android:textColor="#ffff0000"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape"
+                android:layout_below="@+id/LogMess"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:id="@+id/linearLayout">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingLeft="13dp"
+                    android:inputType="textPersonName"
+                    android:hint="Registration Id"
+                    android:ems="10"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/LogRegId"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:id="@+id/linearLayout2">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:paddingLeft="13dp"
+                    android:hint="Password"
+                    android:paddingBottom="15dp"
+                    android:ems="10"
+                    android:id="@+id/LogPass"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textColor="#ffffffff"
+                android:id="@+id/btnLog"
+                android:background="@drawable/shapred"
+                android:layout_below="@+id/showPass"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="#1a52ad"
+                android:text="Click here to Create an Account"
+                android:id="@+id/CreAcc"
+                android:layout_below="@+id/btnLog"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/LogMess"
+                android:layout_toEndOf="@+id/LogMess"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:id="@+id/showPass"
+                android:checked="false"
+                android:textColor="#ffffffff"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignLeft="@+id/LogMess"
+                android:layout_alignStart="@+id/LogMess"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:background="@drawable/shapred"
+        android:textColor="#ffffffff"
+
+        android:id="@+id/btnExit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

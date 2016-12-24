@@ -17,6 +17,19 @@
         </activity>
         <activity android:name=".LoginActivity">
         </activity>
+        <activity android:name=".ForgetPassword">
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity
+            android:name=".CommonActivity"
+            android:label="@string/title_activity_common"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".ResetPassword">
+        </activity>
+        <activity android:name=".SendSmsActivity">
+        </activity>
     </application>
 
 </manifest>
